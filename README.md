@@ -1,0 +1,2 @@
+# classificador-knn
+Classificador KNN
