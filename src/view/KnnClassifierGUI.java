@@ -1,7 +1,12 @@
 package view;
 
+import model.Flower;
+import model.ui.PredictionTableModel;
+import utils.KnnClassifier;
+
 import javax.swing.*;
 import java.awt.*;
+import java.util.HashSet;
 
 /**
  * Created by fauno on 2/17/16.
@@ -9,22 +14,27 @@ import java.awt.*;
 public class KnnClassifierGUI extends JFrame{
 
     JMenuBar menuBar;
+    JTable predictionTable;
+    JScrollPane scrollPane;
+    JFrame mainContent;
 
     public KnnClassifierGUI(){
+
 
         buildMenu();
         setTitle("K Nearest Neighbors Classifier");
         setSize(800, 600);
 
-
-
-
         //Open in the Center of The Screen
         Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
 
-        setLayout(new GridLayout(2, 2));
+     //   setLayout(new GridLayout(1, 0));
 
         this.setLocation(dim.width/2-this.getSize().width/2, dim.height/2-this.getSize().height/2);
+
+
+        setPredictionTable();
+
 
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
@@ -67,7 +77,26 @@ public class KnnClassifierGUI extends JFrame{
         optionsMenu.add(radioButtonManhattan);
         optionsMenu.addSeparator();
 
+
+
+
+
     }
 
+    private void setPredictionTable() {
+
+                HashSet<Flower> flowers = Flower.readListFromCsv("arquivos/iris.data");
+                KnnClassifier knn = new KnnClassifier(flowers, 90);
+                //knn.printResult();
+                //  String[] columnNames = {"Real Value", "Predicted Value", "Prediction"};
+                predictionTable = new JTable(new PredictionTableModel(knn.getPedrictionData()));
+                predictionTable.setPreferredScrollableViewportSize(new Dimension(500, 70));
+                predictionTable.setFillsViewportHeight(true);
+                predictionTable.add(scrollPane);
+        //mainContent = new JScrollPane(predictionTable);
+//                add(mainContent);
+
+
+    }
 
 }

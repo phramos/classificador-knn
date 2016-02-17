@@ -241,9 +241,32 @@ public class KnnClassifier {
 
 		System.out.println("____________________PREDICTION____________________");
 		System.out.println("Amount of nearest neighbors used to predict: " + this.amountOfNeighbors);
-		this.predictions.forEach(System.out::println);
+
+		for (Prediction prediction : this.predictions) {
+			System.out.println(prediction);
+		}
 
 		System.out.println("Accuracy: " + this.accuracy);
 
+	}
+
+	public Object[][] getPedrictionData() {
+
+		Object data[][] = new Object[this.predictions.size()][3];
+		int i = 0;
+
+		for (Prediction prediction : predictions) {
+
+			data[i][0] = prediction.getCorrectValue();
+			data[i][1] = prediction.getPrecitedValue();
+			data[i][2] = (prediction.isCorrect() ? "CORRECT" : "INCORRECT");
+//			data[0][i] = prediction.getCorrectValue();
+//			data[1][i] = prediction.getPrecitedValue();
+//			data[2][i] = (prediction.isCorrect() ? "CORRECT" : "INCORRECT");
+
+			++i;
+		}
+
+		return data;
 	}
 }
