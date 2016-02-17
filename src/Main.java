@@ -1,24 +1,33 @@
 import model.Flower;
 import utils.KnnClassifier;
+import view.KnnClassifierGUI;
 
 import java.util.HashSet;
 
+/**
+ * Created by fauno on 2/17/16.
+ */
 public class Main {
 
-    public static void main(String[] args) {
+    private static void createAndShowGUI() {
+        //Create and set up the window.
+        KnnClassifierGUI gui = new KnnClassifierGUI();
 
-//        Knn training-test split test
-//        ArrayList<Flower> flowers = Flower.readListFromCsv("arquivos/iris.data");
-//        HashSet<Flower> flowers = Flower.readListFromCsv("arquivos/iris.data");
-//        KnnClassifier knn = new KnnClassifier(flowers, 50);
+        //Display the window.
+       // gui.pack();
+        gui.setVisible(true);
+    }
 
-//        Euclidean distance test
-//        Flower f1 = new Flower(1.0,10.0,2.0,2.0,"a");
-//        Flower f2 = new Flower(1.0,1.1,2.0,2.1,"a");
-//
-//        System.out.println(KnnClassifier.euclideanDistance(f2,f1));
-//        System.out.println(KnnClassifier.euclideanDistance(f1,f2));
+    public static void main(String args[]) {
+        HashSet<Flower> flowers = Flower.readListFromCsv("arquivos/iris.data");
+        KnnClassifier knn = new KnnClassifier(flowers,67);
+        knn.printResult();
 
+//        javax.swing.SwingUtilities.invokeLater(new Runnable() {
+//            public void run() {
+//                createAndShowGUI();
+//            }
+//        });
 
     }
 

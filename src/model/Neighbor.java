@@ -3,7 +3,7 @@ package model;
 /**
  * Created by pedro on 16/02/16.
  */
-public class Neighbor {
+public class Neighbor implements Comparable<Neighbor> {
 	private Flower flower;
 	private Double distance;
 
@@ -29,7 +29,18 @@ public class Neighbor {
 	}
 
 	@Override
-	public int hashCode() {
-		return super.hashCode();
+	public int compareTo(Neighbor o) {
+		if (this.distance == o.distance)
+			return 0;
+
+		if (this.distance > o.distance)
+			return 1;
+		else
+			return -1;
+	}
+
+	@Override
+	public String toString() {
+		return this.distance.toString();
 	}
 }

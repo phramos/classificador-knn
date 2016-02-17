@@ -108,7 +108,7 @@ public class Flower {
 
                 //    System.out.println(flower);
             }
-            System.out.println(flowers);
+//            System.out.println(flowers);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
