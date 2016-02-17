@@ -2,25 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0ac3e84-f800-41c0-865c-0bcdcddd3981" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/view/KnnClassifierGUI.form" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classificador-knn/Main.class" afterPath="$PROJECT_DIR$/out/production/classificador-knn/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classificador-knn/com/intellij/uiDesigner/core/DimensionInfo.class" afterPath="$PROJECT_DIR$/out/production/classificador-knn/com/intellij/uiDesigner/core/DimensionInfo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classificador-knn/com/intellij/uiDesigner/core/GridConstraints.class" afterPath="$PROJECT_DIR$/out/production/classificador-knn/com/intellij/uiDesigner/core/GridConstraints.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classificador-knn/com/intellij/uiDesigner/core/GridLayoutManager.class" afterPath="$PROJECT_DIR$/out/production/classificador-knn/com/intellij/uiDesigner/core/GridLayoutManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classificador-knn/com/intellij/uiDesigner/core/SupportCode$TextWithMnemonic.class" afterPath="$PROJECT_DIR$/out/production/classificador-knn/com/intellij/uiDesigner/core/SupportCode$TextWithMnemonic.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classificador-knn/com/intellij/uiDesigner/core/SupportCode.class" afterPath="$PROJECT_DIR$/out/production/classificador-knn/com/intellij/uiDesigner/core/SupportCode.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classificador-knn/com/intellij/uiDesigner/core/Util.class" afterPath="$PROJECT_DIR$/out/production/classificador-knn/com/intellij/uiDesigner/core/Util.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classificador-knn/model/Flower.class" afterPath="$PROJECT_DIR$/out/production/classificador-knn/model/Flower.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classificador-knn/model/Neighbor.class" afterPath="$PROJECT_DIR$/out/production/classificador-knn/model/Neighbor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classificador-knn/model/Prediction.class" afterPath="$PROJECT_DIR$/out/production/classificador-knn/model/Prediction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classificador-knn/utils/KnnClassifier.class" afterPath="$PROJECT_DIR$/out/production/classificador-knn/utils/KnnClassifier.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classificador-knn/view/KnnClassifierGUI.class" afterPath="$PROJECT_DIR$/out/production/classificador-knn/view/KnnClassifierGUI.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/utils/KnnClassifier.java" afterPath="$PROJECT_DIR$/src/utils/KnnClassifier.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/KnnClassifierGUI.java" afterPath="$PROJECT_DIR$/src/view/KnnClassifierGUI.java" />
     </list>
     <ignored path="classificador-knn.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -113,12 +95,14 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.7894002">
-              <caret line="82" column="32" selection-start-line="82" selection-start-column="32" selection-end-line="82" selection-end-column="32" />
+            <state vertical-scroll-proportion="0.8856346">
+              <caret line="47" column="21" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3949#4057#0" expanded="true" />
-                <element signature="e#4056#4057#0" expanded="true" />
+                <element signature="e#1338#1688#0" expanded="true" />
+                <element signature="e#1687#1688#0" expanded="true" />
+                <element signature="e#4612#4720#0" expanded="true" />
+                <element signature="e#4719#4720#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -242,42 +226,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="classificador-knn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="classificador-knn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="classificador-knn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="classificador-knn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -780,12 +728,12 @@
       <workItem from="1455656686202" duration="12745000" />
       <workItem from="1455680090586" duration="10814000" />
       <workItem from="1455693686988" duration="4204000" />
-      <workItem from="1455716699570" duration="10937000" />
+      <workItem from="1455716699570" duration="14349000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38700000" />
+    <option name="totallyTimeSpent" value="42112000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-2" y="-3" width="1924" height="1044" extended-state="6" />
@@ -942,8 +890,10 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3949#4057#0" expanded="true" />
-            <element signature="e#4056#4057#0" expanded="true" />
+            <element signature="e#1338#1688#0" expanded="true" />
+            <element signature="e#1687#1688#0" expanded="true" />
+            <element signature="e#4612#4720#0" expanded="true" />
+            <element signature="e#4719#4720#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1074,14 +1024,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar:///usr/lib/jvm/java-7-oracle/jre/lib/jfxrt.jar!/javafx/stage/FileChooser.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3328859">
+          <caret line="82" column="16" selection-start-line="82" selection-start-column="16" selection-end-line="82" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.7894002">
-          <caret line="82" column="32" selection-start-line="82" selection-start-column="32" selection-end-line="82" selection-end-column="32" />
+        <state vertical-scroll-proportion="0.8856346">
+          <caret line="47" column="21" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3949#4057#0" expanded="true" />
-            <element signature="e#4056#4057#0" expanded="true" />
+            <element signature="e#1338#1688#0" expanded="true" />
+            <element signature="e#1687#1688#0" expanded="true" />
+            <element signature="e#4612#4720#0" expanded="true" />
+            <element signature="e#4719#4720#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -1,9 +1,13 @@
+import javafx.stage.FileChooser;
 import model.Flower;
 import utils.KnnClassifier;
 import view.KnnClassifierGUI;
 
 import javax.swing.*;
+import javax.swing.filechooser.FileNameExtensionFilter;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.HashSet;
 
 /**
@@ -12,11 +16,16 @@ import java.util.HashSet;
 public class Main {
 
     private static void createAndShowGUI() {
-        JFrame frame = new JFrame("K Nearest Neighbors classifier");
+        final JFrame frame = new JFrame("K Nearest Neighbors classifier");
         JMenuBar menuBar = new JMenuBar();
-
         /*
-        * Criação do Menu
+        * File chooser configurations
+        * */
+        final JFileChooser fileChooser = new JFileChooser();
+        fileChooser.setFileFilter(new FileNameExtensionFilter("Iris Data", "data"));
+        String filePath;
+        /*
+        * Menu bar configurations
         * */
         //Set the menubar
         frame.setJMenuBar(menuBar);
@@ -28,11 +37,19 @@ public class Main {
         menuBar.add(aboutMenu);
 
         // Cria e adiciona um item simples para o menu
-        JMenuItem chooseData = new JMenuItem("Choose Data File");
+        final JMenuItem chooseData = new JMenuItem("Choose Data File");
         JMenuItem openAction = new JMenuItem("Open");
 
-        // Cria e aiciona um CheckButton como um item de menu
-        JCheckBoxMenuItem checkAction = new JCheckBoxMenuItem("Check Action");
+        chooseData.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                int result = fileChooser.showOpenDialog(frame);
+                if (result == JFileChooser.APPROVE_OPTION) {
+                   // filePath = fileChooser.getSelectedFile().getAbsolutePath();
+                }
+            }
+        });
+
 
         // Cria e adiciona um RadioButton como um item de menu
         JRadioButtonMenuItem radioActionEuclidean = new JRadioButtonMenuItem(
@@ -57,7 +74,7 @@ public class Main {
         HashSet<Flower> flowers = Flower.readListFromCsv("arquivos/iris.data");
         KnnClassifier knn = new KnnClassifier(flowers,67);
 
-        String[] columns = {"Value", "Prediction", "Correct"};
+        String[] columns = {"Value", "Prediction", "Result"};
 
         JTable table = new JTable(knn.getPedrictionData(), columns);
         JScrollPane scrollPane = new JScrollPane(table);
